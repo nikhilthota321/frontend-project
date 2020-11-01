@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+background-image:url('nik.jpg');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:100% 95%;
+}
+#b1{
+width:100px;
+background-color:pink;
+font-size:20px;
+text-align:center;
+}
+</style>
+</head>
+<body style="background-color:skyblue;">
+<h1 style="color:white;"><b>BOOK ROOM HERE</b></h1>
+<form action="success.html" style="color:yellow;"><b>Name of the stayer :</b>
+<input type="text" id="name"required placeholder="" ><br><br>
+<b>Guests:</b>
+<input list="browser2" name="browser2"required placeholder="       --select numbers---    ">
+<datalist id="browser2">
+<option value="1">
+<option value="2">
+<option value="3">
+<option value="4">
+</datalist><br><br>
+<b>Types of rooms and their costs :</b>
+<input list="browser3" name="browser3"required placeholder="       -----select -----    ">
+<datalist id="browser3">
+<option value="single room-1500/-">
+<option value="double room-2000/-">
+<option value="twin room-2200/-">
+<option value="hollywood twin room-2500/-">
+<option value="suite room-1700/-">
+<option value="mini suite room-1200/-">
+<option value="President Suite-3000/-">
+<option value="connected rooms-3500/-">
+</datalist><br><br>
+<b>Break-fast :</b>
+Yes
+<input type="radio" id="Yes"required placeholder="ans" value="Yes">
+No
+<input type="radio" id="No"required placeholder="ans" value="No"><br><br>
+<b>Lunch :</b>
+Yes
+<input type="radio" id="Yes"required placeholder="ans1" value="Yes">
+No
+<input type="radio" id="No"required placeholder="ans1" value="No"><br><br>
+<b>Dinner :</b>
+Yes
+<input type="radio" id="Yes"required placeholder="ans2" value="Yes">
+No
+<input type="radio" id="No"required placeholder="ans2" value="No"><br><br>
+<label><b>Date of booking from:</b> </label>
+<input type="date"><br><br>
+<label><b>Date of booking to:</b> </label>
+<input type="date"><br><br>
+<label for="region"title="city"><b>LOCATION :</b></label>
+<select id="region" name="region">
+<optgroup label="city">
+<option value="banglore">BANGLORE</option>
+<option value="hyderabad">HYDERABAD</option>
+<option value="chennai">CHENNAI</option>
+<option value="delhi">DELHI</option>
+<option value="kolkota">KOLKATA</option>
+<option value="goa">GOA</option>
+<option value="mumbai">MUMBAI</option>
+</optgroup>
+
+</select>
+<label for="hotel"><b>HOTELS :</b></label>
+<input id="hotel" name="hotel" list="hotels"><br><br>
+<input type="submit" value="Book" id="b1">
+</form>
+<datalist id="hotels">
+<option value="TAJ">
+<option value="FALAKNAMA PALIS">
+<option value="PALACE">
+<option value="AYODYA">
+<option value="MANJEERA">
+<option value="RESORT">
+</body>
+</html>
